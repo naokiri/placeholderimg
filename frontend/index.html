@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>Generate a Placeholder Image</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Free placeholder image generator"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <script data-ad-client="ca-pub-2284189599588944" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<div id="root">
+    <div><img src="example.png" alt="placeholder image"></div>
+    <div><p>The generated image is licensed by <a href="https://creativecommons.org/choose/zero/">CC0</a>.</p></div>
+    <form action="https://api.placeholderimg.net/generate" method="get">
+        <label for="w">Width(px)</label><input type="number" id="w" name="w" min="1" max="99999" value="400">
+        <label for="h">Height(px)</label><input type="number" id="h" name="h" min="1" max="99999" value="250">
+        <div>
+            <button>Download Image</button>
+        </div>
+    </form>
+    <div>Contribute on <a href="https://github.com/naokiri/placeholderimg">GitHub</a></div>
+    <div>Copyright 2021 Naoaki Iwakiri</div>
+</div>
+</body>
+</html>

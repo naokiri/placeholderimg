@@ -1,14 +1,40 @@
-# Welcome to your CDK TypeScript project!
+# Placeholder Image generator
 
-This is a blank project for TypeScript development with CDK.
+https://placeholderimg.net/
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## File and directory structure overview
 
-## Useful commands
+- generator - Lambda backend function to generate the image
+- frontend - Frontend web file
+- scripts - Root npm scripts
+- bin, lib, files in root directory - AWS CDK deploy stack
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+## How to build your copy of the site
+
+### Prerequiste
+- Typescript
+- AWS CDK 1.85 or later
+- Rust musl target for lambda function binary 
+
+
+    rustup target add x86_64-unknown-linux-musl
+
+### Download 
+
+    git clone [this repo] --recursive
+    # or, 'git submodule update --init' if you've already cloned.
+
+### Configure    
+
+TODO: write here.
+
+See and edit frontend/index.html URLs.
+
+See lib/cdk-config.ts 
+
+### Build & Deploy
+In root directory run
+
+    npm run build 
+    cdk deploy
+

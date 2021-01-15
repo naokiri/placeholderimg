@@ -5,7 +5,7 @@
     "placeholderimg": "bin/placeholderimg.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "./scripts/build.sh",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
@@ -16,12 +16,20 @@
     "@types/node": "10.17.27",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "1.81.0",
+    "aws-cdk": "1.84.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigatewayv2": "^1.85.0",
+    "@aws-cdk/aws-apigatewayv2-integrations": "^1.85.0",
+    "@aws-cdk/aws-certificatemanager": "^1.85.0",
+    "@aws-cdk/aws-cloudfront": "^1.85.0",
+    "@aws-cdk/aws-lambda": "^1.85.0",
+    "@aws-cdk/aws-s3": "^1.85.0",
+    "@aws-cdk/aws-s3-deployment": "^1.85.0",
     "@aws-cdk/core": "1.81.0",
+    "dotenv": "^8.2.0",
     "source-map-support": "^0.5.16"
   }
 }
