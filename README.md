@@ -1,6 +1,6 @@
 # Placeholder Image generator
 
-https://placeholderimg.net/
+https://www.placeholderimg.net/
 
 ## File and directory structure overview
 
